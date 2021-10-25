@@ -10,16 +10,12 @@ public class Flower {
     private double price;
     private FlowerType flowerType;
 
-    public void setColor(String color) {
-        System.out.println("You can`t change flower color");
-    }
-
     public void setColor(int[] color) {
         this.color = Arrays.copyOf(color, color.length);
     }
 
     public Flower(FlowerType flowerType){
-        this.flowerType = flowerType;
+        this.flowerType = FlowerType.TULIP;
     }
 
     public String toString() {
