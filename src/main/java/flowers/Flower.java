@@ -3,7 +3,7 @@ import lombok.*;
 
 import java.util.Arrays;
 
-@AllArgsConstructor @Getter @Setter
+@Getter @Setter
 public class Flower {
     private double sepalLength;
     private int[] color;
@@ -15,7 +15,7 @@ public class Flower {
     }
 
     public Flower(FlowerType flowerType){
-        this.flowerType = FlowerType.TULIP;
+        this.flowerType = flowerType;
     }
 
     public String toString() {
